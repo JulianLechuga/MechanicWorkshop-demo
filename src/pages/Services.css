@@ -1,0 +1,116 @@
+.page-header {
+  padding: 4rem 0;
+  border-bottom: 5px solid var(--secondary);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.service-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-info {
+  flex: 1;
+  padding: 3rem;
+}
+
+.service-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-desc {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.service-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.service-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.check-icon {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.service-footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-light);
+}
+
+.service-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.service-image-placeholder {
+  flex: 1;
+  min-height: 400px;
+  background-color: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-large {
+  width: 120px;
+  height: 120px;
+  background-color: var(--gray);
+  opacity: 0.2;
+  mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>') no-repeat center;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>') no-repeat center;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.cta-banner {
+  padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+  .service-row, .service-row.reverse {
+    flex-direction: column;
+  }
+  .service-features {
+    grid-template-columns: 1fr;
+  }
+}
