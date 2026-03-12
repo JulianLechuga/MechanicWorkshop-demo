@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Auto Repair Shop Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Demo Presentation](https://raw.githubusercontent.com/julianlechuga/MechanicWorkshop-demo/main/public/vite.svg)
 
-Currently, two official plugins are available:
+A robust and straightforward site for a mechanic and auto repair shop with service listings.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+**[View Live Demo Here](https://julianlechuga.github.io/MechanicWorkshop-demo/)**
 
-## Expanding the ESLint configuration
+## ✨ Features
+- Responsive Design
+- Service Listings
+- Contact Form
+- Location Map
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Built With
+- **Tech Stack**: React, TypeScript, CSS
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
 
-- Configure the top-level `parserOptions` property like this:
+## 👨‍💻 Developed By
+**Julián Lechuga**
+- [Portfolio](https://julianlechuga.github.io/)
+- [GitHub](https://github.com/julianlechuga)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+*This project is part of a larger frontend portfolio demonstrating proficiency in React, TypeScript, and modern responsive web design.*
